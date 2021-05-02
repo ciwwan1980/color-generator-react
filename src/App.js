@@ -9,8 +9,15 @@ function App() {
 
   const handleSubmit= (e) =>{
     e.preventDefault()
-   let colors= new Values(color).all(10)
-   console.log(colors)
+  
+    try {
+        let colors = new Values(color).all(10)
+  
+    } catch (error) {
+      setError(true)
+      console.log(error)
+    }
+   
   }
   
   return (
@@ -25,6 +32,7 @@ function App() {
    setColor(e.target.value)
  }}
  placeHolder="#f3333"
+  // className={`${error ? 'error' : null}`}
  />
 
  <button className="btn" type= "submit" >submit</button>
