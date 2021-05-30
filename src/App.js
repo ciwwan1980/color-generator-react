@@ -49,6 +49,7 @@ return (
               key={index}
               {...color}
               index={index}
+              hexColor={color.hex}
              
             />
           )
