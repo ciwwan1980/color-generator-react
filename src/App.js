@@ -5,7 +5,7 @@ import Values from 'values.js'
 function App() {
   const [color, setColor] = useState('')
   const [error, setError] = useState(false)
-  const [list, setList] = useState(new Values('#f15025').all(10))
+  const [list, setList] = useState(new Values('#f15030').all(10))
 
   const handleSubmit= (e) =>{
     e.preventDefault()
@@ -20,7 +20,7 @@ function App() {
           }
   } 
   
-  return (
+return (
   <> 
 
 <section className="container">

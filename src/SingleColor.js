@@ -4,9 +4,11 @@ import rgbToHex from './utils'
 const SingleColor = ({rgb,weight, index}) => {
     const [alert, setAlert] = useState(false)
     const bcg = rgb.join(',')
-    console.log(bcg)
-  return <article className="" style={{ backgroundColor:`rgb(${bcg})` }}>
-  single color
+    // console.log(bcg)
+   return <article className="" style={{backgroundColor:`rgb(${bcg})` }}>
+
+  <p>{rgb}</p>
+  <p className="percent-value">{weight}%</p>
   </article>
 }
 
