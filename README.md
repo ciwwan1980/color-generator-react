@@ -1,15 +1,14 @@
 * Project Name:
-- color Generator
+color Generator
 
 * Installation and Setup Instructions
 
-Installation:
+- Installation:
 
 npm install
+npm audit fix
 
-- Nom audit fix
-
-To Start Server:
+- To Start Server:
 
 npm start
 
